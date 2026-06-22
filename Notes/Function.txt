@@ -1,0 +1,47 @@
+--A Function is a self defined block which is used to write business logic.
+
+--A function (method) in Java is a reusable block of code that performs a specific task and can be called whenever needed in a program.
+
+--Functions are used to reuse code, reduce duplication, improve readability, and make programs easier to maintain.
+
+--A Function which is divided into two types:
+
+1) Predefined OR BUilt in Function
+2) User defined OR Custom Function
+
+1) Predefined OR BUilt in Function
+
+ -- A function which is developed by language creator itself is called Predefined function.
+
+ --Predefined functions are built-in functions already available in Java that can be used directly to perform common tasks.
+
+2) User defined OR Custom Function
+
+-- A function which is written by user/developer for its own requirement and specification is called user defined function.
+
+--User-defined functions are functions created by the programmer to perform specific tasks and improve code reusability, readability, and maintenance.
+
+Advantages of Functions in Java
+1.Code Reusability
+
+--Write code once and use it many times.
+
+2.Reduces Code Duplication
+
+--Avoids writing the same code repeatedly.
+
+3.Easy Maintenance
+
+--Changes are made in one place only.
+
+4.Improves Readability
+
+--Makes the program easier to understand.
+
+5.Modularity
+
+--Breaks a large program into smaller parts.
+
+6.Easy Testing and Debugging
+
+Errors can be found and fixed easily.
