@@ -1,0 +1,188 @@
+Operators
+-----------
+An operator is a symbol that performs an operation on one or more operands.
+
+* In Java, an operator is a symbol that performs an operation on one or more operands (values or variables).
+
+*Operands =>An operand is a value, variable, or expression on which an operator performs an operation.
+
+* Basically in java we have 3 types of Operators which are as follows :
+
+a.Unary Operator
+b.Binary Operator
+c.Ternary Operator
+
+| Precedence  | Operators                                                       | Associativity |
+| ----------- | --------------------------------------------------------------- | ------------- |
+| 1 (Highest) | `()` `[]` `.`                                                   | Left to Right |
+| 2           | `++` `--` `+` `-` `!` `~` `(type)` `new`                        | Right to Left |
+| 3           | `*` `/` `%`                                                     | Left to Right |
+| 4           | `+` `-`                                                         | Left to Right |
+| 5           | `<<` `>>` `>>>`                                                 | Left to Right |
+| 6           | `<` `<=` `>` `>=` `instanceof`                                  | Left to Right |
+| 7           | `==` `!=`                                                       | Left to Right |
+| 8           | `&`                                                             | Left to Right |
+| 9           | `^`                                                             | Left to Right |
+| 10          | `\|`                                                            | Left to Right |
+| 11          | `&&`                                                            | Left to Right |
+| 12          | `\|\|`                                                          | Left to Right |
+| 13          | `? :`                                                           | Right to Left |
+| 14 (Lowest) | `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `\|=` `<<=` `>>=` `>>>=` | Right to Left |
+
+Unary Operator
+-------------
+
+* The operator which works upon single operand is called Unary Operator.
+
+* In java we have so many unary operator as shown in the Operator diagram.
+a.! : it is logical compliment Operator. it will invert the boolean value.
+
+b.+  : it is unary + operator. [by default number is positive only]
+
+c.-  : it is unary - operator.
+
+d.++ : it is unary increment operator , increment the value 1.
+
+e.--  : it is unary minus operator , i=decrements the value by 1
+
+Logical Complement Operator
+------------------------------
+*The Logical Complement Operator (!) is a unary operator that reverses (complements) the value of a boolean expression.
+
+* it will make true as false as a true.
+
+Unary Increment
+---------------
+
+*The Unary Increment Operator (++) is a unary operator that increases the value of a variable by 1.
+
+1. Pre-Increment
+
+++variable;
+
+First increments the value by 1.
+Then uses the updated value.
+
+
+2. Post-Increment
+
+variable++;
+
+First uses the current value.
+Then increments the value by 1.
+
+Ternary Operator
+-----------------
+
+* The operator which work upn 3 operand
+
+
+Binary OR Arithmetic operator
+-----------------------------
+
+* The operator which works upon two operand is called Binary Operator.
+
+EX: + , - , + , / and % 
+
+
+* Type promotion is the automatic conversion of a smaller data type into a larger compatible data type by the Java compiler during expression evaluation to prevent data loss.
+
+
+byte
+   ↓
+short
+   ↓
+int
+   ↓
+long
+   ↓
+float
+   ↓
+double
+
+
+Relational operator
+-------------------
+
+Relational operators are used to compare two values or operands. They always return a boolean result (true or false).
+
+
+
+| Operator | Meaning                  | Example    | Result  |
+| -------- | ------------------------ | ---------- | ------- |
+| `>`      | Greater than             | `10 > 5`   | `true`  |
+| `<`      | Less than                | `10 < 5`   | `false` |
+| `>=`     | Greater than or equal to | `10 >= 10` | `true`  |
+| `<=`     | Less than or equal to    | `10 <= 5`  | `false` |
+| `==`     | Double Equal to          | `10 == 10` | `true`  |
+| `!=`     | Not equal to             | `10 != 5`  | `true`  |
+
+
+Ternary Operator
+----------------
+
+* The ternary operator is a short form of the if-else statement. It is used to choose one of two values based on a condition.
+
+* The operator which  works with upon 3 operand is called Ternary Operator.
+What is operator precedence?
+
+Answer:
+Operator precedence determines the order in which operators are evaluated in an expression.
+
+Logical OR Conditional Operator
+-----------------------------
+
+-It is Used to combine or join the multiple into a single statement.
+-It is also known as short-Circuit logical operator OR Conditional operator.
+
+In java we have 3 logical Operators.
+
+1) && (Logical AND Operator)
+2) LL  (Logical OR Operator)
+3) ? : Ternary 
+
+1) && (Logical AND Operator)
+
+The logical AND operator (&&) combines two or more boolean expressions. It returns true only when all conditions are true; otherwise, it returns false. It also uses short-circuit evaluation, meaning the second condition is not checked if the first condition is false.`
+
+
+2) LL  (Logical OR Operator)
+
+The logical OR operator (||) combines two or more boolean expressions. It returns true if at least one condition is true; otherwise, it returns false. It uses short-circuit evaluation, so if the first condition is true, the second condition is not evaluated.
+
+3) ? : Ternary 
+
+The ternary operator (?:) is a conditional operator that acts as a shorthand for the if-else statement. It evaluates a boolean condition and returns one of two expressions depending on whether the condition is true or false.
+
+Bitwise OR  (|)
+---------------
+
+The bitwise OR operator (|) compares each bit of two numbers. If at least one bit is 1, the result is 1; otherwise, the result is 0.
+
+
+Bitwise AND (&)
+-----------------
+
+The bitwise AND operator (&) compares each bit of two numbers. It returns 1 only when both corresponding bits are 1; otherwise, it returns 0.
+
+Bitwise XOR (^)
+----------------
+
+The bitwise XOR (^) operator compares each bit of two numbers. It returns 1 if the corresponding bits are different; otherwise, it returns 0.
+
+
+Bitwise Complement Operator (~) 
+
+The Bitwise Complement operator (~) is a unary operator. It reverses (flips) all the bits of a number.
+
+Left Shift (<<)
+
+The left shift operator shifts the bits of a number to the left by the specified number of positions. Each left shift by one position multiplies the number by 2.
+
+EX:x << n = x × 2ⁿ
+
+Bitwise Right Shift (>>)
+
+The right shift operator shifts the bits of a number to the right by the specified number of positions. For positive numbers, each right shift by one position divides the number by 2.
+
+EX: x >> n = x ÷ 2ⁿ

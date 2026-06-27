@@ -1,0 +1,119 @@
+Local variable
+----------------
+* if we declare a variable inside the method body OR constructor body OR inside the block body then it is called Local OR Stack OR Automatic OR Temporary Variable.
+
+* A local variable must be initialized by the developer before use local variable does not have any default value.===============================
+        WRAPPER CLASS IN JAVA
+===============================
+
+Definition:
+A Wrapper Class is a class that converts a primitive data type into an object.
+
+OR
+
+Wrapper classes provide object representations of primitive data types.
+
+--------------------------------
+
+Primitive Data Type    Wrapper Class
+--------------------------------
+byte                  Byte
+short                 Short
+int                   Integer
+long                  Long
+float                 Float
+double                Double
+char                  Character
+boolean               Boolean
+
+--------------------------------
+
+Why Use Wrapper Classes?
+
+• To convert primitive data into objects.
+• Required when working with Collections (ArrayList, HashMap, etc.).
+• Provides useful methods like parseInt(), valueOf(), compare(), etc.
+• Supports Autoboxing and Unboxing.
+
+--------------------------------
+
+Autoboxing
+(Primitive → Object)
+
+Example:
+int a = 10;
+Integer obj = a;
+
+System.out.println(obj);
+
+Output:
+10
+
+--------------------------------
+
+Unboxing
+(Object → Primitive)
+
+Example:
+Integer obj = 20;
+int a = obj;
+
+System.out.println(a);
+
+Output:
+20
+
+--------------------------------
+
+Useful Methods
+
+1. parseInt()
+String s = "100";
+int n = Integer.parseInt(s);
+
+2. valueOf()
+Integer obj = Integer.valueOf(50);
+
+3. toString()
+String str = Integer.toString(100);
+
+4. compare()
+System.out.println(Integer.compare(20, 10));
+
+Output:
+1
+
+--------------------------------
+
+Default Values
+
+Byte       → null
+Short      → null
+Integer    → null
+Long       → null
+Float      → null
+Double     → null
+Character  → null
+Boolean    → null
+
+(Note: Wrapper classes are objects, so their default value is null.)
+
+--------------------------------
+
+Primitive vs Wrapper Class
+
+Primitive Data Type          Wrapper Class
+------------------------------------------------
+Stores value                 Stores object
+Faster                       Slightly slower
+Cannot be null               Can be null
+No methods                   Has many utility methods
+Less memory                  More memory
+
+--------------------------------
+
+Interview Definition
+
+A Wrapper Class is a predefined class in Java that wraps a primitive data type into an object. It enables primitive values to be used where objects are required and provides utility methods for data conversion and manipulation.
+
+===============================

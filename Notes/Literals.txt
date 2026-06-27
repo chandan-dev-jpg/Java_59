@@ -1,0 +1,325 @@
+*Any constant expression which we are assigning to a variable is called literal.
+
+*in java we have initially 5 types of literals.
+
+1.Integral Literal [int x=10;]
+2.Floating Point Literal [double d=4.5;]
+3.Boolean Literal [Boolean b=true;]
+4.Character Literal [char ch='A';]
+5.String Literal [String s1="String";]
+
+Note: null is also a Literal.
+
+Integral Literal
+----------------
+*if a numeric literal does not contain any decimal OR fraction then it is called Integral literal.
+
+EX:12,90,34,123 and so on
+
+*In the Integral Literal we have total 4  data types
+a.byte(8 bits)
+b.short(16 bits)
+c.int (32 bits)
+d.long (64 bits)
+
+*An Integral Literal we can represent by 4 different forms
+
+a.Decimal Literal [Base is 10 ,Allowed digits are 0-9]
+b.Octal Literal   [Base is 8 ,Allowed digits are 0-7]
+c.Hexadecimal literal [Base is 16 ,Allowed digits are 0-9 and A-F]
+d.Binary Literal [Base is 2 ,Allowed digits are 0 and 1]
+
+
+a.Decimal Literal 
+
+Definition: A decimal literal is an integer literal represented using digits 0 to 9 and has no prefix. 
+
+By default our numeric literals are decimal literal.
+EX:
+
+int a = 10;
+int b = 25;
+int c = 1000;
+
+
+b.Octal Literal 
+
+
+If any integral literal start with 0(Zero) then it will become octal literal.
+
+EX:
+
+int a = 012;  // Valid octal literal
+int b = 018;  // Invalid octal literal
+
+c.Hexadecimal 
+
+If any integral literal start with 0x or 0X then it is Hexadecimal literal.
+
+EX:
+int a = 0x1A;   // Valid
+int b = 0XFF;   // Valid
+int c = 0x10;   // Valid
+int x = 0xG1;   // Invalid (G is not allowed)
+int y = 0x1Z;   // Invalid (Z is not allowed)
+
+d.Binary
+
+if any octal start with 0b or 0B it will become Binary literal.
+
+Here base is 2 so it will accept 2 digit i.e 0 and 1 only.
+
+EX:
+int a = 0b1010;  // Valid
+int b = 0B1111;  // Valid
+int c = 0b1001;  // Valid
+int x = 0b102;   // Invalid (2 is not allowed)
+int y = 0b1201;  // Invalid (2 is not allowed)
+
+* In java ,Every integral literal is by default of type int only.
+
+Floating Point Literal
+-----------------------
+* If a numeric literals contains decimal OR fraction then is called Floating Point Literal.
+
+* A Floating Point Literal is a numeric literal containing a decimal point or exponent notation. By default, floating-point literals are of type double. To represent a float, use the suffix f or F. 
+
+EX:12.90,1.2,0.9 so on
+
+* in floating point literal  we have 2 data types :
+
+a.float (32 bits)
+b.double (64 bits)
+
+
+** An integral literal we can assign to floating point literal but a floating point point can't assign to integral literal.
+
+Boolean Literal 
+---------------
+-it represent to represent two states i.e true OR False
+
+*Here , We have only one data type i.e boolean data type which accept 1 bit of memory OR depends upon jvm implementation.
+
+boolean isValid=true;
+boolean isEmpty=false;
+
+boolean isValid="true";//Invalid
+boolean isValid=0; //invalid 
+
+Character literal 
+------------------
+A character literal (char literal) in Java represents a single character enclosed in single quotes (' ').
+
+a.Single Character OR digit OR Special Symbol enclosed with single quotes.
+
+EX:
+char x='A';
+char y='5';
+char z='@';
+
+b) In older languages like C and C++, which supports ASCII value format where the range is 0 to 255, On the other hand Java language supports UNICODE value format where the range is 0 - 65535.
+
+Example:
+char ch1 = 65535;   // Valid
+char ch2 = 65536;   // Invalid [Out of the range of UNICODE]
+
+c) We can assign an integral literal (int value) to char data type to get the ASCII OR UNICODE value of that particular number.
+
+Example:
+char ch = 65;
+System.out.println(ch);   // A
+
+d) All the escape sequences in Java, we can represent as Character Literal.
+
+Example:
+char ch = '\n';
+
+e) A character literal, We can also represent in 4 digit hexadecimal number where the format is:
+
+'\uXXXX'
+
+Here \u (small u only) represents UNICODE and X represents exactly 4 digits.
+
+Minimum Range:
+'\u0000'
+
+Maximum Range:
+'\uffff'
+
+Example:
+
+Let say 'A' we want to represent in 4 digit hexadecimal number.
+
+The UNICODE value of A is 65. 65 is in decimal format.
+
+65 which is a decimal number we need to represent in 4 digit hexadecimal format.
+
+(65)10 = (?)16
+
+16 | 65 = 4 remainder 1
+16 |  4 = 0 remainder 4
+
+Therefore,
+
+(65)10 = (0041)16
+
+The number 0041 is the valid 4-digit hexadecimal format.
+
+Example:
+char ch = '\u0041';
+System.out.println(ch);
+
+Output:
+A
+
+
+String Literal
+---------------
+
+* String ia s predefined class available in java.lang (library) Package.
+
+* A String literal is a sequence of characters enclosed in double quotes (" "). In Java, string literals are stored in the String Constant Pool (SCP).
+a) A String literal can contain:
+Alphabets
+Numbers
+Special characters
+Spaces
+Escape sequences
+
+in java we can create String object by using following 3 ways.
+
+1.By using String literals
+String str1="india";
+
+2.By using new keyword
+String str2=new String("Hyderabad");
+
+3.by using Character array [old technique]
+
+char ch[]={'R','A','J'};
+
+
+===============================
+        LITERALS IN JAVA
+===============================
+
+Definition:
+A literal is a fixed value written directly in the source code.
+
+OR
+
+Literals are constant values assigned to variables.
+
+--------------------------------
+
+Types of Literals
+
+1. Integer Literals
+2. Floating-Point Literals
+3. Character Literals
+4. String Literals
+5. Boolean Literals
+6. Null Literal
+
+--------------------------------
+
+1. Integer Literals
+
+Definition:
+Integer literals represent whole numbers.
+
+Examples:
+int a = 100;
+int b = -50;
+int c = 0;
+
+--------------------------------
+
+2. Floating-Point Literals
+
+Definition:
+Floating-point literals represent decimal numbers.
+
+Examples:
+float f = 10.5f;
+double d = 20.75;
+
+--------------------------------
+
+3. Character Literals
+
+Definition:
+Character literals represent a single character enclosed in single quotes (' ').
+
+Examples:
+char ch = 'A';
+char c = '5';
+char s = '$';
+
+--------------------------------
+
+4. String Literals
+
+Definition:
+String literals represent a sequence of characters enclosed in double quotes (" ").
+
+Examples:
+String name = "Chandan";
+String city = "Hyderabad";
+
+--------------------------------
+
+5. Boolean Literals
+
+Definition:
+Boolean literals represent logical values.
+
+Values:
+true
+false
+
+Example:
+boolean flag = true;
+
+--------------------------------
+
+6. Null Literal
+
+Definition:
+The null literal represents a reference that points to no object.
+
+Example:
+String name = null;
+
+--------------------------------
+
+Special Integer Literals
+
+Binary      : 0b1010
+Octal       : 012
+Hexadecimal : 0x1A
+
+Example:
+int binary = 0b1010;   // 10
+int octal  = 012;      // 10
+int hex    = 0x1A;     // 26
+
+--------------------------------
+
+Important Points
+
+• Literals are fixed values.
+• They cannot be changed directly.
+• Used to initialize variables.
+• String literals use double quotes (" ").
+• Character literals use single quotes (' ').
+• Boolean literals are only true and false.
+• Null is used only with reference variables.
+
+--------------------------------
+
+Interview Definition
+
+A literal is a fixed value written directly in the program. Java supports Integer, Floating-point, Character, String, Boolean, and Null literals.
+
+===============================

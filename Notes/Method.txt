@@ -1,0 +1,307 @@
+void 
+-----
+ 
+*The void keyword is used in  method declarations to specify that the method does not return any value.
+* it means the method does not return any value.
+* it is a keyword in java.
+* Our main method return type must be void , As a Developer we can not change any type of return type.
+
+ In java we have Basically two types of method:
+
+ 1.Static method
+ 2.Non Static Method
+
+ 1.Static method
+
+--In java , if we declare any method with Static modifier OR keyword then it is called static method.
+--A Static method we can directly call with the class name.
+
+public class Calculate
+{
+    public static void accept()
+    {
+
+    }
+}
+
+Note:In order to call this static method accept() we can use class name :
+
+Calculate.accept();
+
+Calculate ---- class name
+accept    ----- static method name
+
+
+
+
+
+ 2.Non Static Method
+
+--In java , if we declare  a method without static modifier OR keyword then it is called non static method.
+
+
+Java 25 main ()method:
+----------------------
+* in java 25 , main() is a non static method.
+* it is a user defined method because the user/developer is responsible to write the logic inside the main method.
+* in java the execution of the program always starts from main() method.
+* In java 25 main is non static method so internally JVM will create the object (based on the javac generated class )for class.
+
+===============================
+          METHOD IN JAVA
+===============================
+
+Definition:
+A method is a block of code that performs a specific task. It is executed only when it is called.
+
+OR
+
+A method is a collection of statements grouped together to perform a particular operation.
+
+--------------------------------
+
+Syntax:
+
+returnType methodName(parameters) {
+    // statements
+    return value;   // only if return type is not void
+}
+
+--------------------------------
+
+Example:
+
+class Demo {
+    static void greet() {
+        System.out.println("Hello");
+    }
+
+    public static void main(String[] args) {
+        greet();
+    }
+}
+
+Output:
+Hello
+
+--------------------------------
+
+Advantages of Methods
+
+• Code reusability.
+• Reduces code duplication.
+• Improves readability.
+• Easy to test and maintain.
+• Breaks a large program into smaller parts.
+
+--------------------------------
+
+Types of Methods
+
+1. Predefined Method
+2. User-defined Method
+
+--------------------------------
+
+1. Predefined Method
+
+Definition:
+Methods that are already provided by Java are called predefined methods.
+
+Examples:
+Math.sqrt(25);
+System.out.println("Hello");
+String.valueOf(100);
+
+--------------------------------
+
+2. User-defined Method
+
+Definition:
+Methods created by the programmer are called user-defined methods.
+
+Example:
+
+static void display() {
+    System.out.println("Welcome");
+}
+
+--------------------------------
+
+Methods Based on Parameters and Return Type
+
+1. No Parameter, No Return Value
+
+static void show() {
+    System.out.println("Hello");
+}
+
+--------------------------------
+
+2. Parameter, No Return Value
+
+static void add(int a, int b) {
+    System.out.println(a + b);
+}
+
+--------------------------------
+
+3. No Parameter, Return Value
+
+static int getNumber() {
+    return 100;
+}
+
+--------------------------------
+
+4. Parameter, Return Value
+
+static int add(int a, int b) {
+    return a + b;
+}
+
+--------------------------------
+
+Method Components
+
+• Access Modifier
+• static (optional)
+• Return Type
+• Method Name
+• Parameters
+• Method Body
+• Return Statement (if required)
+
+--------------------------------
+
+Method Naming Rules
+
+• Must start with a letter, '_' or '$'.
+• Cannot start with a number.
+• Cannot use Java keywords.
+• Case-sensitive.
+• Use meaningful names.
+• By convention, use camelCase.
+
+Examples:
+calculateSum()
+displayStudent()
+findMax()
+
+--------------------------------
+
+Important Points
+
+• A method executes only when it is called.
+• A method can return a value or return nothing (void).
+• A method can have parameters or no parameters.
+• Java supports method overloading.
+• Methods improve code reusability and readability.
+
+--------------------------------
+
+Interview Definition
+
+A method is a block of code that performs a specific task. It executes only when it is called and helps achieve code reusability, modularity, and better program organization.
+
+===============================
+
+===============================
+      STATIC & NON-STATIC METHOD
+===============================
+
+1. STATIC METHOD (Class Method)
+
+Definition:
+A static method is a method declared with the static keyword. It belongs to the class, not to an object.
+
+Syntax:
+
+static returnType methodName() {
+    // statements
+}
+
+Example:
+
+class Demo {
+    static void display() {
+        System.out.println("Static Method");
+    }
+
+    public static void main(String[] args) {
+        display();          // or Demo.display();
+    }
+}
+
+Output:
+Static Method
+
+Important Points:
+• Declared using the static keyword.
+• Belongs to the class.
+• Called using the class name or directly inside a static method.
+• Object creation is not required.
+• Can access only static members directly.
+• Cannot use this or super keywords.
+
+--------------------------------
+
+2. NON-STATIC METHOD (Instance Method)
+
+Definition:
+A non-static method is a method without the static keyword. It belongs to an object of the class.
+
+Syntax:
+
+returnType methodName() {
+    // statements
+}
+
+Example:
+
+class Demo {
+    void display() {
+        System.out.println("Non-Static Method");
+    }
+
+    public static void main(String[] args) {
+        Demo obj = new Demo();
+        obj.display();
+    }
+}
+
+Output:
+Non-Static Method
+
+Important Points:
+• Declared without the static keyword.
+• Belongs to an object.
+• Object creation is required.
+• Called using an object.
+• Can access both static and non-static members directly.
+• Can use this and super keywords.
+
+--------------------------------
+
+Difference Between Static and Non-Static Method
+
+Static Method              Non-Static Method
+------------------------------------------------------
+Belongs to class           Belongs to object
+Object not required        Object required
+Called by class name       Called by object
+Can access only static     Can access static & non-static
+Cannot use this/super      Can use this/super
+Memory allocated once      Memory depends on object
+
+--------------------------------
+
+Interview Definition
+
+Static Method:
+A static method is a method declared with the static keyword. It belongs to the class and can be called without creating an object.
+
+Non-Static Method:
+A non-static method is a method declared without the static keyword. It belongs to an object and requires object creation to be called.
+
+===============================

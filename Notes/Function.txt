@@ -45,3 +45,72 @@ Advantages of Functions in Java
 6.Easy Testing and Debugging
 
 Errors can be found and fixed easily.
+
+
+===============================
+         FUNCTION IN JAVA
+===============================
+
+Definition:
+A function is a block of code that performs a specific task and may return a value.
+
+Note:
+In Java, functions are called methods because every function must be declared inside a class.
+
+--------------------------------
+
+Syntax:
+
+returnType functionName(parameters) {
+    // statements
+    return value;
+}
+
+--------------------------------
+
+Example:
+
+class Demo {
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int result = add(10, 20);
+        System.out.println(result);
+    }
+}
+
+Output:
+30
+
+--------------------------------
+
+Features of Functions
+
+• Performs a specific task.
+• Can accept parameters.
+• Can return a value.
+• Promotes code reusability.
+• Improves readability and maintenance.
+
+--------------------------------
+
+Function vs Method
+
+Function                    Method
+-----------------------------------------------
+Independent block of code   Declared inside a class
+Can exist independently     Belongs to a class/object
+Used in languages like C    Used in Java
+
+Note:
+In Java, every function is a method because Java does not support standalone functions.
+
+--------------------------------
+
+Interview Definition
+
+A function is a reusable block of code that performs a specific task and may return a value. In Java, functions are known as methods because they are always declared inside a class.
+
+===============================
