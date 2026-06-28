@@ -114,3 +114,13 @@ Interview Definition
 Unboxing is the automatic conversion of a wrapper class object into its corresponding primitive data type. It was introduced in Java 5 to simplify programming.
 
 =========================================
+
+*Unlike primitive data type wrapper class can not be convert from one type to another type 
+
+EX:Long x=12;//Invalid
+   Double d=90;//Invalid
+   Float f=10.20;//Invalid
+
+   EX:Long x=12l;//Valid
+   Double d=20D;//Valid
+   Float f=10.2f//Valid

@@ -37,21 +37,21 @@
 // 5. Find the largest of two numbers
 
 // 6. Find the largest of three numbers
-void main()
-{
-    int n1=30;
-    int n2=20;
-    int n3=40;
-    int result = (n1 >= n2 && n1 >= n3) ? n1
-            : (n2 >= n1 && n2 >= n3) ? n2
-            : n3;
-    IO.println(result);
+// void main()
+// {
+//     int n1=30;
+//     int n2=20;
+//     int n3=40;
+//     int result = (n1 >= n2 && n1 >= n3) ? n1
+//             : (n2 >= n1 && n2 >= n3) ? n2
+//             : n3;
+//     IO.println(result);
 
-}
+// }
 // 7. Check even or odd
 // 8. Check positive, negative, or zero
 // 9. Find the square and cube of a number
-// 10. Calculate simple interest
+// 10. Calculate simple interest(SI = (P × R × T) / 100)
 
 // ---
 

@@ -153,3 +153,76 @@ Method Overloading is the process of defining multiple methods with the same nam
 
 =========================================
 
+
+* It comes After static polymorphism.
+
+NOTE: If we want then we can directly call any method using IO.println() statement but that method return tupe must be not be void otherwise we will get compilation error.
+
+Rule
+-----
+
+1.Method must have the same name.
+2.Must differ in number ,type or order of parameters.
+3.Can change the return type.
+4.Access modifiers can change.
+5.Static methods can be overloaded.
+6.Type promotion applies automatically.
+7.Cannot overload by only changing return type.
+
+Method Overloading Resolution 
+------------------------------------
+Method Overloading Resolution is the process by which the Java compiler decides
+which overloaded method to invoke at compile time based on the arguments and
+the method selection rules.
+
+Priority Order:
+
+1. Exact Match
+2. Most Specific Type Rule
+3. Widening Primitive
+4. Autoboxing
+5. Widening Reference
+6. Var-Args (Lowest Priority)
+
+Most Specific Type Rule:
+If more than one overloaded method is applicable, Java chooses the method
+whose parameter type is more specific (closer to the argument type).
+
+double>float --float
+float>long ---long
+long>int    --int
+int >char   
+int>short   
+short >byte  
+
+Note:there is no relation Between char and short,byte.
+Examples:
+
+show(int) + show(long)
+show(10);          → show(int)
+
+show(int) + show(double)
+show(10);          → show(int)
+
+show(long) + show(double)
+show(10);          → show(long)
+
+show(float) + show(double)
+show(10);          → show(float)
+
+show(Object) + show(String)
+show("Java");      → show(String)
+
+show(10.5);        → show(double)      // Exact Match
+show('A');         → show(int)         // char → int (Widening)
+show((byte)10);    → show(int)         // byte → int (Widening)
+show(10L);         → show(long)        // Exact Match
+show(10L);         → show(double)      // If show(long) is absent
+show(new Integer(5)); → show(Integer)  // Exact Match
+show(5);           → show(Integer)     // Autoboxing (if show(int) is absent)
+show(1,2,3);       → show(int...)      // Var-Args (if no better match exists)
+
+Final Rule:
+Exact Match > Most Specific Type > Widening Primitive >
+Autoboxing > Widening Reference > Var-Args
+

@@ -117,3 +117,103 @@ Interview Definition
 A Wrapper Class is a predefined class in Java that wraps a primitive data type into an object. It enables primitive values to be used where objects are required and provides utility methods for data conversion and manipulation.
 
 ===============================
+
+► Definition
+A Variable is a named memory location used to store data. Its value can
+change during program execution.
+
+► Syntax
+dataType variableName = value;
+
+Example:
+int age = 20;
+String name = "Chandan";
+double salary = 45000.50;
+
+──────────────────────────────────────────────────────────────────────
+Formula
+──────────────────────────────────────────────────────────────────────
+Variable = Data Type + Variable Name + Value (Optional)
+
+Example:
+int number = 10;
+
+int      → Data Type
+number   → Variable Name
+10       → Value
+
+
+Types of Variables
+──────────────────────────────────────────────────────────────────────
+
+
+1.Primitive Variable
+
+*If we declare any variable with primitive data type like byte,short,int,long,float,double,char,and boolean then is called Primitive variable.
+
+int x=10;
+body isEmpty=true;
+
+*We cannot assign null literal as well as we cannot invoke any method by using primitive variable.
+
+int x=null;//Invalid
+
+2.Reference Variable
+------------------------
+*if we declare any variable with Reference data type then it is called Reference Variable.
+
+EX:
+class Student
+{
+
+}
+
+Student s1=new Student();
+
+Student  ---->  Class Name
+s1        ----> Reference Variable
+Student    ----> constructor
+
+*
+
+
+                           VARIABLES
+                               │
+                ┌──────────────┴──────────────┐
+                │                             │
+          Class Level Variables         Method Level Variables
+      (Declared inside the class)   (Declared inside method/constructor)
+                │                               |
+        ┌───────┴────────┐             ┌────────┴────────┐
+        │                │             │                 │
+ Class Variable      Instance Variable  Local         Parameter Variable
+ (Static Field)     (Non-Static Field)  Variable
+        │                │           │                     │
+        │                │           │                     │
+     static int x;    int y;      int a = 10;        void show(int n)
+
+
+     Variables
+│
+├── Class Level Variables
+│   │
+│   ├── Class Variable (Static Field)
+│   │     • Declared with static keyword
+│   │     • One copy per class
+│   │
+│   └── Instance Variable (Non-Static Field)
+│         • Declared without static
+│         • One copy per object
+│
+└── Method Level Variables
+    │
+    ├── Local Variable
+    │     • Declared inside method/block
+    │
+    └── Parameter Variable
+          • Declared in method/constructor parameter list
+
+
+
+
+          

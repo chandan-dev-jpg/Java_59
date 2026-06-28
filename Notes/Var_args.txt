@@ -157,3 +157,12 @@ Interview Definition
 Var-args (Variable Arguments) allow a method to accept a variable number of arguments of the same type. They are declared using three dots (...) and are internally treated as an array.
 
 =========================================
+
+*It was introduced from JDK 1.5v.
+*Var args is known as Variable Argument.
+*it is represented by exactly 3dots(...).
+*By using va args we can accept 0 to n number of arguments either of same type OR even different type.
+*Actually,Internally it is an array.
+*Var args we can use only for method OR constructor parameter.
+*Var Args must be only one and last parameter for constructor OR method.
+*Var Args can accept both array variable ([]arr) as well as direct values (10,20,30).

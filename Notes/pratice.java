@@ -1,4 +1,3 @@
-void main()
-{
+public class pratice {
     
 }
