@@ -1,0 +1,102 @@
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                         DATA HIDING IN JAVA                                  │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Definition                                                                   │
+│ Data Hiding is the process of restricting direct access to an object's       │
+│ data (fields) from outside the class. It protects the data from unauthorized │
+│ access and modification.                                                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ How is Data Hiding achieved?                                                 │
+│ ✓ Declare fields as private.                                                 │
+│ ✓ Access or modify them using public getter and setter methods.              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Example                                                                      │
+│ class Student {                                                              │
+│     private String name;                                                     │
+│                                                                              │
+│     public void setName(String name) {                                       │
+│         this.name = name;                                                    │
+│     }                                                                        │
+│                                                                              │
+│     public String getName() {                                                │
+│         return name;                                                         │
+│     }                                                                        │
+│ }                                                                            │
+│                                                                              │
+│ Student s = new Student();                                                   │
+│ s.setName("Rahul");                                                          │
+│ System.out.println(s.getName());                                             │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Advantages                                                                   │
+│ ✓ Protects data from unauthorized access.                                    │
+│ ✓ Improves security.                                                         │
+│ ✓ Prevents accidental modification of data.                                  │
+│ ✓ Provides controlled access through methods.                                │
+│ ✓ Improves maintainability and reliability of code.                          │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Data Hiding vs Encapsulation                                                 │
+│ Data Hiding                        | Encapsulation                           │
+│ ---------------------------------- | --------------------------------------- │
+│ Protects data                      | Wraps data and methods together         │
+│ Achieved using private fields      | Achieved using classes + access control │
+│ Focuses on security                | Focuses on data organization + security │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Interview Answer                                                             │
+│ Data Hiding is the process of preventing direct access to an object's data   │
+│ by declaring fields as private and providing controlled access through       │
+│ public getter and setter methods.                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      DATA VALIDATION IN JAVA                                 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Definition                                                                   │
+│ Data Validation is the process of checking whether input data is valid       │
+│ before storing or processing it. It ensures that only correct and acceptable │
+│ values are assigned to an object.                                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Why is Data Validation needed?                                               │
+│ ✓ Prevents invalid data from being stored.                                   │
+│ ✓ Maintains data accuracy and consistency.                                   │
+│ ✓ Improves program reliability.                                              │
+│ ✓ Protects business rules.                                                   │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ How is it achieved?                                                          │
+│ ✓ Validate input inside setter methods or constructors.                      │
+│ ✓ Accept only valid values; reject invalid values.                           │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Example                                                                      │
+│ class Student {                                                              │
+│     private int age;                                                         │
+│                                                                              │
+│     public void setAge(int age) {                                            │
+│         if (age >= 18) {                                                     │
+│             this.age = age;                                                  │
+│         } else {                                                             │
+│             System.out.println("Invalid Age");                               │
+│         }                                                                    │
+│     }                                                                        │
+│                                                                              │
+│     public int getAge() {                                                    │
+│         return age;                                                          │
+│     }                                                                        │
+│ }                                                                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Advantages                                                                   │
+│ ✓ Prevents invalid data.                                                     │
+│ ✓ Improves data integrity.                                                   │
+│ ✓ Reduces errors and bugs.                                                   │
+│ ✓ Makes applications more secure and reliable.                               │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Data Hiding vs Data Validation                                               │
+│ Data Hiding                      | Data Validation                           │
+│ -------------------------------- | ----------------------------------------- │
+│ Protects data from direct access | Checks whether data is valid              │
+│ Uses private fields              | Uses conditions (if, switch, etc.)        │
+│ Focuses on security              | Focuses on correctness                    │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Interview Answer                                                             │
+│ Data Validation is the process of checking input values before storing them  │
+│ in an object. It ensures that only valid and acceptable data is stored,      │
+│ usually by performing checks in constructors or setter methods.              │
+└──────────────────────────────────────────────────────────────────────────────┘

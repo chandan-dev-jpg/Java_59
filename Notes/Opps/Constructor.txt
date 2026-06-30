@@ -1,0 +1,178 @@
+*If the name of the class and name of the method both are exactly same and it should contain any return type then it is called constructor.
+
+EX:
+
+public class Student{
+    public void Student() //Method [due to void return type it is a method]
+    {
+
+    }
+
+    public Student()    //Constructor [There is no return type]
+    {
+
+    }
+}
+
+
+*Whenever we write a class in java (ELC and BLC ) and if we don't write any type of constructor then automatically java compiler will add one default no argument constructor (constructor without parameter) in the class.
+(we can not think about a java class without constructor)
+
+*Every java must have one constructor either implicity added by java compiler OR explicity written by developer.
+
+*Every time we will create an object in java by using new keyword thaen at least one constructor must be invoked.
+
+
+
+Default no argument constructor :
+----------------------------------
+*It is automatically added by java compiler to reach and every class ,if developer has not providede any type of constructor in the class.
+
+
+Why is it added?
+✅ To allow object creation using new ClassName().
+✅ To initialize instance variables with their default values (0, false, null, etc.).
+✅ To call the parent class constructor (super()).
+✅ To ensure every object is properly initialized.
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                         NEW KEYWORD IN JAVA                                  │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Definition                                                                   │
+│ The new keyword is used to create an object (instance) of a class.           │
+│ It allocates memory for the object in the heap and calls the constructor.    │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Syntax                                                                       │
+│ ClassName objectName = new ClassName();                                      │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Example                                                                      │
+│ class Student {                                                              │
+│     Student() {                                                              │
+│         System.out.println("Constructor Called");                            │
+│     }                                                                        │
+│ }                                                                            │
+│                                                                              │
+│ public class Demo {                                                          │
+│     public static void main(String[] args) {                                 │
+│         Student s = new Student();                                           │
+│     }                                                                        │
+│ }                                                                            │
+│ Output:                                                                      │
+│ Constructor Called                                                           │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ What happens when 'new' is used?                                             │
+│ 1. Allocates memory for the object in the Heap Memory.                       │
+│ 2. Initializes instance variables with default values.                       │
+│ 3. Calls the class constructor.                                              │
+│ 4. Returns the object's reference.                                           │
+│ 5. Stores the reference in a reference variable.                             │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Memory Representation                                                        │
+│ Student s = new Student();                                                   │
+│                                                                              │
+│ Stack Memory                Heap Memory                                      │
+│ ┌──────────┐                ┌─────────────────┐                              │
+│ │ s ------ ├──────────────► │ Student Object  │                              │
+│ └──────────┘                └─────────────────┘                              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Important Points                                                             │
+│ ✓ Used to create objects.                                                    │
+│ ✓ Allocates memory in the heap.                                              │
+│ ✓ Automatically calls the constructor.                                       │
+│ ✓ Returns a reference to the created object.                                 │
+│ ✓ Every object creation requires the new keyword (except a few JVM-created    │
+│   objects, such as String literals).                                         │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Interview Answer                                                             │
+│ The new keyword is used to create an object. It allocates memory in the heap,│
+│ initializes instance variables, invokes the constructor, and returns the     │
+│ object's reference.                                                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      CONSTRUCTOR IN JAVA (ONE BOX NOTES)                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Definition                                                                   │
+│ A constructor is a special method that is automatically called when an       │
+│ object is created. It is used to initialize the object's data (fields).      │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Syntax                                                                       │
+│ class Student {                                                              │
+│     Student() {                                                              │
+│         // Constructor                                                       │
+│     }                                                                        │
+│ }                                                                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Rules                                                                        │
+│ ✓ Constructor name must be the same as the class name.                       │
+│ ✓ Constructor has NO return type (not even void).                            │
+│ ✓ Constructor is called automatically using the new keyword.                 │
+│ ✓ A class can have multiple constructors (Constructor Overloading).          │
+│ ✓ Constructors can have access modifiers (public, private, etc.).            │
+│ ✓ Constructors cannot be static, final, or abstract.                         │
+│ ✓ Constructors are not inherited.                                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Types of Constructors                                                        │
+│ 1. Default Constructor (Compiler Provided)                                   │
+│    - Created automatically if no constructor is written.                     │
+│                                                                              │
+│ 2. No-Argument Constructor (User Defined)                                    │
+│    - Written by the programmer without parameters.                           │
+│                                                                              │
+│ 3. Parameterized Constructor                                                 │
+│    - Accepts parameters to initialize object values.                         │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Constructor vs Method                                                        │
+│ Constructor                     | Method                                     │
+│ ------------------------------- | ------------------------------------------ │
+│ Same name as class              | Any valid name                             │
+│ No return type                  | Must have a return type or void            │
+│ Called automatically            | Called explicitly                          │
+│ Initializes object              | Performs specific tasks                    │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Constructor Overloading                                                    │
+│ Multiple constructors in the same class with different parameter lists.      │
+│ Example:                                                                     │
+│ Student()                                                                    │
+│ Student(String name)                                                         │
+│ Student(String name, int age)                                                │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ this() Constructor Chaining                                                  │
+│ Used to call another constructor of the same class.                          │
+│ Rule: this() must be the first statement inside the constructor.             │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ super()                                                                      │
+│ Used to call the parent class constructor.                                   │
+│ If not written, Java automatically calls super().                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Advantages                                                                   │
+│ ✓ Initializes objects automatically.                                         │
+│ ✓ Reduces repeated initialization code.                                      │
+│ ✓ Makes object creation simple and clean.                                    │
+│ ✓ Supports constructor overloading for flexibility.                          │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Example                                                                      │
+│ class Student {                                                              │
+│     String name;                                                             │
+│     int age;                                                                 │
+│                                                                              │
+│     Student(String n, int a) {                                               │
+│         name = n;                                                            │
+│         age = a;                                                             │
+│     }                                                                        │
+│                                                                              │
+│     public static void main(String[] args) {                                 │
+│         Student s = new Student("Rahul", 20);                                │
+│         System.out.println(s.name + " " + s.age);                            │
+│     }                                                                        │
+│ }                                                                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Interview Points                                                             │
+│ ✓ Constructor is used to initialize objects.                                 │
+│ ✓ Invoked automatically when an object is created.                           │
+│ ✓ Every class has a constructor (compiler provides one if needed).           │
+│ ✓ Constructors can be overloaded but cannot be overridden.                   │
+│ ✓ Constructors cannot be inherited.                                          │
+│ ✓ Constructors have no return type.                                          │
+└──────────────────────────────────────────────────────────────────────────────┘

@@ -3,7 +3,18 @@
 // ## Level 1: Basic Logic
 
 // 1. Print "Hello World"
+// void main()
+// {
+//     IO.println("Hello World");
+// }
 // 2. Add two numbers
+// void main()
+// {
+//     int n=20;
+//     int n1=20;
+//     int r=n+n1;
+//     IO.println("Sum of two number is :"+r);
+// }
 // 3. Find the average of three numbers
 
 // void main(){
@@ -36,6 +47,14 @@
 
 // 5. Find the largest of two numbers
 
+// void main()
+// {
+// int n1=20;
+// int n2=10;
+// int r=(n1>=n2)?n1:n2;
+// IO.println("Largest Number is : "+r);
+// }
+
 // 6. Find the largest of three numbers
 // void main()
 // {
@@ -49,9 +68,54 @@
 
 // }
 // 7. Check even or odd
+// void main()
+// {
+
+//     int num=Integer.parseInt(IO.readln("Enter Number NUmber :  "));
+//     if(num%2==0)
+//     {
+//         IO.println(num+" is EVEN ");
+//     }else{
+//         IO.println(num+" is ODD ");
+//     }
+// }
 // 8. Check positive, negative, or zero
+// void main()
+// {
+//     int num=Integer.parseInt(IO.readln("Enter a number : "));
+//     if(num>0)
+//     {
+// IO.println(num+" is Positive  ");
+//     }
+//     else if(num==0)
+//     {
+//         IO.println(num+"is zero");
+//     }
+//     else {
+//         IO.println(num+" is negative ");
+//     }
+// }
 // 9. Find the square and cube of a number
+
+// void main()
+// {
+//     int num=Integer.parseInt(IO.readln("Enter Number : "));
+//     IO.println(num+"Square is "+(num*num));
+// }
+
 // 10. Calculate simple interest(SI = (P × R × T) / 100)
+
+// void main()
+// {
+//     int p=Integer.parseInt(IO.readln("Enter a Number :"));
+//     int R=Integer.parseInt(IO.readln("Enter a Number :"));
+//     int T=Integer.parseInt(IO.readln("Enter a Number :"));
+
+//     double si=(p*R*T)/100;
+
+//     IO.println(" SImple Interest is : "+si);
+
+// }
 
 // ---
 
@@ -75,6 +139,7 @@
 // 12. Find the greatest of three numbers
 // 13. Grade calculator
 // 14. Electricity bill calculator
+
 // 15. Calculator using switch-case
 // 16. Voting eligibility
 // 17. Discount calculator
