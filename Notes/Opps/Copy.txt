@@ -1,0 +1,8 @@
+Deep Copy:
+-----------
+--In deep copy multiple objects are created so if we modify one object data another object data will not be modified.
+
+Shallow Copy:
+-------------
+--In shallow copy we will craeted only one object created and the same object is referred by multiple referrence varible so, if we modify the object content by using any of the reference variable so original object will be modified.
+
