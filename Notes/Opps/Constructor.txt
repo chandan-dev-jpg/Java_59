@@ -176,3 +176,39 @@ Why is it added?
 │ ✓ Constructors cannot be inherited.                                          │
 │ ✓ Constructors have no return type.                                          │
 └──────────────────────────────────────────────────────────────────────────────┘
+
+* it is used to contruct the object that is the reason it is known as constructor.
+
+Types of Constructor in java :
+-----------------------------
+
+* in java we have two types of constructor.
+
+1.Implicity OR Compiler added constructor
+2.Explicit OR User-defined Constructor.
+
+Implicity OR Compiler added constructor:
+-----------------------------------------------
+
+*Whenever we write class in java and if we don't write any type of constructor ,Automatically java compiler will add default no argument constructor.
+*It will help to create the object without writing user-defined constructor.
+
+Explicity OR User defined constructor
+-------------------------------------
+*if a constructor is written by user to the class then it is called Explicit OR User Defined constructor.
+*A user can write two types of explicit constructor.
+
+1.No argument OR Zero Argument OR Non-Parameterized OR parameter less constructor
+2.Parameterized Constructor.
+
+No Argument Constructor
+-----------------------
+If a constructor is written by user without any parameter then it is called No Argument Constructor.
+it is used to provide the default value for the non static fields.
+
+Actually Internally it will copy the default values provided by new keyword.
+
+Parameterized Constructor
+--------------------------
+If we pass on or more parameters to the constructor then it is called Parameterized constructor.
+it is mainly used to innitilized the non static fields with parameters variable using user values.
