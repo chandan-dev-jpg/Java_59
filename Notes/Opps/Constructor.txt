@@ -212,3 +212,14 @@ Parameterized Constructor
 --------------------------
 If we pass on or more parameters to the constructor then it is called Parameterized constructor.
 it is mainly used to innitilized the non static fields with parameters variable using user values.
+
+
+Copy Constructor
+------------------
+*We can pass an object reference to the constructor the main purpose of passing an object reference to the constructor to copy th e content of one object to another object.
+
+
+Constructor Chaining
+
+Definition:
+Constructor chaining is the process of calling one constructor from another constructor within the same class using this(), or from the parent class using super().

@@ -104,3 +104,5 @@ public class Student
 │ and can be accessed using the class name.                                    │
 └──────────────────────────────────────────────────────────────────────────────┘
 *Main Propose of static field is save the memory.
+
+*Whenever we create an object in java then a single copy of static field will be created and the same single copy will be shareable by all the objects as shown in the program & diagram.
