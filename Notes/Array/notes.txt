@@ -295,3 +295,9 @@ A One-Dimensional Array is a linear collection of elements of the same data type
 2.2D OR Multidimensional Array.
 
 A Two-Dimensional Array is an array of arrays. It stores data in rows and columns, like a table or matrix.
+
+Key Points
+Arrays store elements of the same data type.
+Array indexing starts from 0.
+Use array.length to get the array size.
+Arrays have fixed size once created.
