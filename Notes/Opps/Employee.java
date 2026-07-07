@@ -1,49 +1,21 @@
 
-void main()
+class Foo
 {
-Product p1=new Product("mn",1);
-IO.println(p1);
+    {
+        IO.println("Non Static block");
+    }
 
-Product p2=new Product(p1);
-IO.println(p2);
+    public Foo()
+    {
+        super();
+        IO.println("No Argument ");
+    }
 
-p1.setId(10);
-IO.println(p1);
-IO.println(p2);
+
 }
 
-class Product
+void main()
 {
-    private String name;
-    private int id;
-
-    public Product(String name,int id)
-    {
-        this.name=name;
-        this.id=id;
-    }
-
-    public Product(Product p)
-    {
-        this.id=p.id;
-        this.name=p.name;
-    }
-
-
-    public void setId(int id)
-    {
-this.id=id;
-    }
-
-    public int getId()
-    {
-     return id;   
-    }
-
-    public String toString()
-    {
-        return "Product [Name "+name+" id "+id+"]";
-    }
-
-
+    new Foo();
+    new Foo();
 }
