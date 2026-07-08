@@ -152,6 +152,17 @@
 // ## Level 3: Loops
 
 // 21. Print 1 to N
+
+
+
+void main()
+{
+    int n=10;
+    for(int i=0;i<=n;i++)
+    {
+IO.println(i);
+    }
+}
 // 22. Print N to 1
 // 23. Sum of first N numbers
 // 24. Multiplication table
