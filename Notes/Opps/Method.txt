@@ -2,3 +2,7 @@ Method Chaining
 
 Definition:
 Method chaining is a technique in which multiple methods are called on the same object in a single statement. It works when each method returns the current object (this) or another object.
+
+Recursive Function in Java
+
+A recursive function is a function that calls itself to solve a problem. Every recursive function must have a base case to stop the recursion.

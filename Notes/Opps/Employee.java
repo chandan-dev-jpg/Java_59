@@ -1,21 +1,24 @@
-
-class Foo
+class Test
 {
+    public Test(int x)
     {
-        IO.println("Non Static block");
-    }
+        this("java");
+        IO.println("int x value is "+x);
 
-    public Foo()
+    }
+    public Test(String y)
+    {
+        this(90.0f);
+        IO.println("String y value is "+y);
+    }
+    public Test(float f)
     {
         super();
-        IO.println("No Argument ");
+        IO.println("Float Value is "+f);
     }
-
-
 }
 
 void main()
 {
-    new Foo();
-    new Foo();
+    new Test(16); 
 }
