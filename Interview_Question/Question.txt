@@ -1,0 +1,37 @@
+1)  What is OOP?
+2)  What are the pillars of OOP?
+3)  Advantages of OOP.
+4)  What is a class?
+5)  What is an object?
+6)  Difference between a class and an object.
+7)  What is Instantiation process.
+8)  What is default value? Who provides default value for NSF
+9)  What is an instance variable OR Non static field?
+10) What is an instance method?
+11) What is Variable shadow?
+12) What is this keyword in Java?
+13) What is method local serach algorithm?
+14) What is the difference between local & parameter variable?
+15) How many types of Variables in Java?
+
+class Test {
+
+    Test t;
+    int val;
+
+    Test(int val) {
+        this.val = val;
+    }
+
+    public static void main(String[] args) {
+
+        Test t1 = new Test(5);
+        Test t2 = new Test(10);
+
+        t1.t = t2;
+
+        t2 = new Test(20);
+
+        System.out.println(t1.t.val);
+    }
+}
