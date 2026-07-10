@@ -1,6 +1,13 @@
 void main()
 {
 
+    String name=IO.readln("Enter a Product Name :");
+    int id=Integer.parseInt(IO.readln("Enter Product Id :"));
+    double price=Double.parseDouble(IO.readln("Enter a product price :"));
+    Product p=new Product(name, id, price);
+
+    IO.println(p);
+
 }
 
 public class Product
@@ -14,8 +21,8 @@ public class Product
 
 if(name.equals("null")||name.isBlank())
     {
-IO.println("Name Cannot be null or empty");
-return;
+System.out.println("Name Cannot be null or empty");
+System.exit(0);
     }   
     else if(id<=0)
     {
@@ -33,5 +40,10 @@ return;
     this.name=name;
         this.id=id;
         this.price=price;
+    }
+
+    public String toString()
+    {
+        return "Product [Name"+name+" id "+id+" price"+price+"]";
     }
 }
