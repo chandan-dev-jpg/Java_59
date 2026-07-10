@@ -1,3 +1,5 @@
+*it is used touct the object that is the reason it is known as constructor.
+
 *If the name of the class and name of the method both are exactly same and it should contain any return type then it is called constructor.
 
 EX:
@@ -197,6 +199,7 @@ Explicity OR User defined constructor
 -------------------------------------
 *if a constructor is written by user to the class then it is called Explicit OR User Defined constructor.
 *A user can write two types of explicit constructor.
+*User defined constructor so varible initialization & variable reinitialization both are done in the same line at the time of creating the object.
 
 1.No argument OR Zero Argument OR Non-Parameterized OR parameter less constructor
 2.Parameterized Constructor.
