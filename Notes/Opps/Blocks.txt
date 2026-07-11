@@ -8,6 +8,7 @@ class Test
 {
     {
         IO.println("Non Static Block");
+        //Inside the class but outside of the method OR constructor OR Block.
     }
 }
 
