@@ -1,0 +1,95 @@
+══════════════════════════════════════════════════════════════
+                 BLANK FINAL FIELD (JAVA)
+══════════════════════════════════════════════════════════════
+
+Definition:
+A blank final field is a final variable declared without an
+initial value. It must be initialized exactly once before the
+constructor (instance field) or static block (static field)
+finishes execution.
+
+Syntax:
+--------------------------------------------------------------
+final int x;        // Blank final field
+--------------------------------------------------------------
+
+Rules:
+✓ Declared without initialization.
+✓ Must be assigned exactly once.
+✓ Cannot be reassigned.
+✓ Every constructor must initialize it.
+✓ If not initialized → Compile-Time Error.
+✓ Used when every object should have its own constant value.
+
+Instance Blank Final Field:
+--------------------------------------------------------------
+class Student {
+    final int id;
+
+    Student(int id) {
+        this.id = id;
+    }
+}
+--------------------------------------------------------------
+
+Static Blank Final Field:
+--------------------------------------------------------------
+class Demo {
+    static final int VALUE;
+
+    static {
+        VALUE = 100;
+    }
+}
+--------------------------------------------------------------
+
+Valid:
+--------------------------------------------------------------
+final int x;
+
+Test() {
+    x = 10;
+}
+--------------------------------------------------------------
+
+Invalid:
+--------------------------------------------------------------
+final int x;
+
+Test() {
+    x = 10;
+    x = 20;     // Compile-Time Error
+}
+--------------------------------------------------------------
+
+Compile-Time Errors:
+✗ Variable not initialized.
+✗ Assigning more than once.
+✗ Assigning outside constructor (instance field).
+
+Why Use It?
+✔ Unique IDs
+✔ Roll Numbers
+✔ Employee IDs
+✔ Account Numbers
+✔ Immutable Object Data
+
+Difference:
+--------------------------------------------------------------
+final int x = 10;
+→ Initialized at declaration.
+
+final int x;
+→ Initialized later (constructor/static block).
+--------------------------------------------------------------
+
+Interview Definition:
+"A blank final field is a final variable declared without an
+initial value. It must be initialized exactly once in every
+constructor (instance field) or static block (static field),
+and its value cannot be changed afterward."
+══════════════════════════════════════════════════════════════
+
+*A final filed must be intialized by developer only once.
+*If a final instance variable is not inialized at the time of deckaration then it is called Black final field.
+*A blank final field can't be inialized inside the default inside the default on argument constructor.

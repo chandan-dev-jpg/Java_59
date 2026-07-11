@@ -1,33 +1,13 @@
 void main()
 {
-new Calculate(100, 200);
-new Calculate(100, 200);
+// new Employee();
 }
 
-class Calculate
+class Employee
 {
-    public Calculate(int x,int y)
+    int id;
     {
-        this(1.2,1.2);
-        IO.println("Sum of two intger s"+(x+y));
-    }
+        IO.println(this.id);Employee e=new Employee();
 
-    public Calculate(double x,double y)
-    {
-this("java","Technology");
-IO.println("Sum of two double is :"+(x+y));
-    }
-
-    public Calculate(String x,String y)
-    {
-        IO.println("Concatenation of two String is :"+(x+y));
-
-    }
-    {
-        IO.println("Non static");
     }
 }
-
-
-
-
