@@ -93,3 +93,41 @@ and its value cannot be changed afterward."
 *A final filed must be intialized by developer only once.
 *If a final instance variable is not inialized at the time of deckaration then it is called Black final field.
 *A blank final field can't be inialized inside the default inside the default on argument constructor.
+
+void main()
+{
+LIC lic=new LIC();
+IO.println(lic.installment);
+}
+
+class LIC
+{
+    final double installment;
+}
+
+
+*A blank final filed we can't inialized inside the method body.
+
+
+void main()
+{
+LIC lic=new LIC();
+lic.accept();
+IO.println(lic);
+}
+
+class LIC
+{
+    final double installment;
+    void accept()
+    {
+installment=200.0;
+    }
+}
+
+
+*A blnack final filed must be intialized by developer only once in the following two place:
+
+A) Inside non static block
+OR
+B)Inside constructor body
