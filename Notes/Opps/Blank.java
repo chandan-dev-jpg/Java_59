@@ -1,15 +1,42 @@
-
 void main()
 {
-LIC lic=new LIC();
-IO.println(lic.installment);
+Car car=new Car(0, null);
+IO.println(car);
 }
 
-class LIC
+class Enginee
 {
-    final double installment;
+    private String type;
+    private int horsePower;
+
+    public Enginee(String type,int horsePower)
     {
-        installment=9000.0;
-        
+super();
+this.type=type;
+this.horsePower=horsePower;
+    }
+
+    public String toString()
+    {
+        return "Engine [ Type="+type+", horsepower="+horsePower+" ]";
     }
 }
+
+class Car
+{
+    private int model;
+    private String name;
+    private final Enginee engine;
+    public Car(int model,String name)
+    {
+this.name=name;
+this.model=model;
+this.engine=new Enginee("BMW", 2641);
+    }
+
+    public String toString()
+    {
+        return "Car [Model="+model+", Name="+name+", Engine="+engine+"]";
+    }
+}
+
