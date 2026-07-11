@@ -20,7 +20,7 @@ public class Book
 
     public static Book getBook(String author, String name)
     {
-        return new Book(author, name);
+        return new Book("","");
     }
 
     @Override
