@@ -131,3 +131,5 @@ installment=200.0;
 A) Inside non static block
 OR
 B)Inside constructor body
+
+*A Blank Final Field also have default value provided by new keyword.
