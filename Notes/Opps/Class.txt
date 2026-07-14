@@ -1,3 +1,4 @@
+*Class can not be declared protected and default and final.
 IO class
 -----------
 * IO stands input/output is a predefined class available in java.lang package available from JDK 25v.

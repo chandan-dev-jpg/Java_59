@@ -2,6 +2,7 @@
                  BLANK FINAL FIELD (JAVA)
 ══════════════════════════════════════════════════════════════
 
+*If we declare a non static field with final modifier without initialize then is called blank final field.
 Definition:
 A blank final field is a final variable declared without an
 initial value. It must be initialized exactly once before the
