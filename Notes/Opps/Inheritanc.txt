@@ -1,6 +1,14 @@
 Definition:
 Inheritance is an OOP concept in which one class (child/subclass) acquires the properties (fields) and behaviors (methods) of another class (parent/superclass). It is implemented using the extends keyword.
 
+
+Why use ? OR Mian Propose 
+1.Code Reusability 
+2.Method Overriding
+3.Extensibility
+4.Logical Hierachy
+5.Supports Polymorphism
+
 *We have total 5 types of inheritance in java:
 
 1)Single Level Inheritance
