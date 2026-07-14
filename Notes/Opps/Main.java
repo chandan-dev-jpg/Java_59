@@ -1,33 +1,41 @@
+// import java.beans.VetoableChangeListenerProxy;
+
 void main()
 {
-Student s=new Student();
+    String CartYpe=IO.readln();
+    String model=IO.readln();
+    String color=IO.readln();
+Car c=new Car(CartYpe,color,model);
+c.display();
 
-String name=IO.readln();
-int rollNo=Integer.parseInt(IO.readln());
-s.setName(name);
-s.setRoll(rollNo);
-s.display();
-}
-
-class Person
-{
-String name;
-void setName(String name)
-{
-this.name=name;
-}
 }
 
-class Student extends Person{
-int rollNo;
-void setRoll(int rollNo)
+class Vehicle
 {
-    this.rollNo=rollNo;
+String CartYpe;
+public Vehicle(String CartYpe)
+{
+this.CartYpe=CartYpe;
 }
+}
+
+class Car extends Vehicle{
+String color;
+String model;
+
+
+public Car(String CartYpe,String color,String model)
+{
+    super(CartYpe);
+    this.color=color;
+    this.model=model;
+}
+
+
 public void display()
 {
-    IO.println("Name is : "+name);
-    IO.println("Roll No : "+rollNo);
+    IO.println("Car Type :"+CartYpe);
+    IO.println("Car Color :"+color);
+    IO.println("Car Model : "+model);
 }
-
 }
