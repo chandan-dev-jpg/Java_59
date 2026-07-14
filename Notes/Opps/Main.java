@@ -1,41 +1,39 @@
-// import java.beans.VetoableChangeListenerProxy;
-
 void main()
 {
-    String CartYpe=IO.readln();
-    String model=IO.readln();
-    String color=IO.readln();
-Car c=new Car(CartYpe,color,model);
-c.display();
-
-}
-
-class Vehicle
+int number=Integer.parseInt(IO.readln());
+for(int i=1;i<=number;i++)
 {
-String CartYpe;
-public Vehicle(String CartYpe)
+int id1=Integer.parseInt(IO.readln().trim());
+String name1=IO.readln();
+int id2=Integer.parseInt(IO.readln().trim());
+String name2=IO.readln();
+Passenger.totalPassengers++;
+IO.println("--- Passenger"+i+"Details ---");
+Passenger p=new Passenger(id1,name1);
+Passenger p2=new Passenger(id2,name2);
+p.display();
+p2.display();
+}
+}
+
+class Passenger
 {
-this.CartYpe=CartYpe;
-}
-}
+    static int totalPassengers=0;
+    int PassengerId;
+    String PassengerName;
+    public Passenger(int PassengerId,String PassengerName)
+    {
+        this.PassengerId=PassengerId;
+        this.PassengerName=PassengerName;
 
-class Car extends Vehicle{
-String color;
-String model;
-
-
-public Car(String CartYpe,String color,String model)
-{
-    super(CartYpe);
-    this.color=color;
-    this.model=model;
-}
-
+    }
 
 public void display()
 {
-    IO.println("Car Type :"+CartYpe);
-    IO.println("Car Color :"+color);
-    IO.println("Car Model : "+model);
+    // IO.println("");
+    IO.println("Passenger ID: "+PassengerId);
+    IO.println("Passenger Name: "+PassengerName);
+    IO.println("Passenger Name: "+totalPassengers);
 }
+
 }
