@@ -1,0 +1,1 @@
+*Whenever super class non static field name and sub class non stat' field name both are same then it is called variable Hindinng.
