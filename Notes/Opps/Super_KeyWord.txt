@@ -1,3 +1,3 @@
 *If the super class non static method name and sub class non static method name both are same then it is called Method Overriding.
 *Whenever super class non static field name and sub class non stat' field name both are same then it is called variable Hindinng.
-Constructor chaining is the process of calling one constructor from another constructor to reuse code and avoid duplication.
+*Constructor chaining is the process of calling one constructor from another constructor to reuse code and avoid duplication.
