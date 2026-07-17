@@ -1,53 +1,52 @@
 void main()
-
 {
-int c=Integer.parseInt(IO.readln());
-switch (c) {
+int ch=Integer.parseInt(IO.readln().trim());
+switch (ch) {
     case 1->
     {
-        String name=IO.readln();
-        String d=IO.readln();
-      Employee e=new Employee(name);
-      e.display();
+        double balance=Double.parseDouble(IO.readln());
+        Account a=new Account(balance);
+        IO.println(""+a.getBalance());
 
     }
     case 2->
     {
-        String name=IO.readln();
-        String d=IO.readln();
-      Manager e=new Manager(name,d);
+        double b=Double.parseDouble(IO.readln());
+        double r=Double.parseDouble(IO.readln());
+        SavingsAccount a=new SavingsAccount(b);
+        IO.println(""+a.getBalance());
+        IO.println(""+a.calculateInterest(r));
 
-e.d();
     }
 }
 
 }
 
-class Employee
+class Account
 {
-    String name;
-    Employee(String name)
+double balance;
+Account(double balance)
+{
+this.balance=balance;
+}
+
+double getBalance()
+{
+    return balance;
+}
+}
+
+class SavingsAccount extends Account
+{
+    SavingsAccount(double balance)
     {
-        this.name=name;
-    }
-    void display()
-    {
-        IO.println(name);
+super(balance);
     }
 
-}
-class Manager extends Employee
-{
-    String dept;
-    
-    Manager(String name,String dept)
+
+    double calculateInterest(double rate)
     {
-        super(name);
-        this.dept=dept;
-    }
-    void d()
-    {
-        IO.println(name);
-        IO.println(dept);
+        return balance * (rate / 100);
     }
 }
+
