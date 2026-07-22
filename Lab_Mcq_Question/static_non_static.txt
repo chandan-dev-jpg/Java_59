@@ -233,7 +233,10 @@ public class Test
     }
 }
 ANS:
-
+Main Method
+Constructor: Singleton Object Created
+Static Block: Singleton Instance Created
+Hello Everyone!!!
 Q10) Find the Output :
 
 class Foo
@@ -261,6 +264,7 @@ public class Test
 	}	
 }
 
+ANS:Main Method Executed 
 Q11) Find the Output :
 
 class  Alpha        
@@ -585,6 +589,7 @@ public class StaticTrick5
         Child.hello();
     }
 }
+ANS:
 
 Q24)
 
@@ -609,6 +614,11 @@ public class StaticTrick9
     }
 }
 
+ANS:
+Constructor executed
+Static block executed
+Main method
+
 Q25)
 public class StaticTrick 
 {
@@ -632,6 +642,7 @@ public class StaticTrick
         System.out.println("Y = " + Y);
     }
 }
-
+ANS:X = 5
+ Y =10
 
 JVM Architecture -> Class Loader -> Medium & Hard
