@@ -21,10 +21,10 @@ class Car
 private double price;
 private final Engine engine;
 
-Car(double price)
+Car(double price,Engine engine)
 {
 this.price=price;
-this.engine=new Engine("nnm");
+this.engine=engine;
 
 }
 
@@ -41,7 +41,10 @@ public class Test
 
     void main()
     {
-        Car c=new Car(100);
+        Engine e=new Engine("k");
+        Car c=new Car(100,e);
         IO.println(c);
+        Car b=new Car(200,e);
+        IO.println(b);
     }
 }
