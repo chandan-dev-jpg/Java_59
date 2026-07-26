@@ -1,4 +1,4 @@
-public class Enginee {
+ class Engine {
     
 
     private String type;
@@ -19,12 +19,12 @@ this.type=type;
 class Car
 {
 private double price;
-private final Enginee engine;
+private final Engine engine;
 
 Car(double price)
 {
 this.price=price;
-this.engine=new Enginee("nnm");
+this.engine=new Engine("nnm");
 
 }
 
@@ -32,11 +32,16 @@ public String toString()
 {
     return "Car [Price "+price+" engine"+engine+"]";
 }
+
+
 }
 
-
-void main()
+public class Test
 {
-    Car c=new Car(100);
-    IO.println(c);
+
+    void main()
+    {
+        Car c=new Car(100);
+        IO.println(c);
+    }
 }
