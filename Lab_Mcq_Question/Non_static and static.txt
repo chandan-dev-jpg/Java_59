@@ -1,10 +1,4 @@
 
-Batch_59_Assignment.txt
-Page
-1
-/
-1
-100%
 Que-1) : What is the output of below program ?
 
 class Example19 
@@ -27,30 +21,38 @@ class Example19
 			x = x + Example19.x;
 		}
 }
-	
+	ANS:
+    40
 ------------------------------------------------------
 Que-2) : What is the output of below program ?
 
 class Example20 
 {
-	static int a;
+	static int a; // 0
 	
 	public static void main(String[] args)
 	{
-		System.out.println(Example20.a); 
+		System.out.println(Example20.a); // 0
+
+
 		Example20.a = Example20.initialize();
-		System.out.println(Example20.a);
+
+
+		System.out.println(Example20.a); // 60
 	}
 
 	static int initialize() 
 	{
 		Example20.a = 50;
+
 		return 60;
 	}
 	
 }
 
-
+ANS:
+0
+60
 ------------------------------------------------------
 
 Que-3) : What is the output of below program ?
@@ -79,6 +81,9 @@ class Example21
 		return 20;
 	}
 }
+ANS:
+10
+20
 ------------------------------------------------------
 Que-4) : What is the output of below program ?
 
@@ -88,16 +93,16 @@ class Example22
 
 	public static void main(String[] args)
 	{
-		System.out.println(Example22.m1()+ x);
+		System.out.println(Example22.m1()+ x); // 
 	}
 
 	static int m1()
-	{
-		x = x + 100;
+	{ 
+		 x = x + 100;
 		return x;
 	} 
 }
-	
+	ANS:220
 ------------------------------------------------------
 Que-5) : What is the output of below program ?
 
@@ -128,6 +133,10 @@ class Example23
 		return 100;
 	}
 }
+ANS:
+50
+100
+120
 ------------------------------------------------------
 Que-6) : What is the output of below program ?
 
@@ -162,6 +171,10 @@ class Example24
 		return a + 20;
 	}
 }	
+ANS:
+30
+30
+130
 ------------------------------------------------------
 Que-7) : What is the output of below program ?
 
@@ -177,6 +190,9 @@ class Example25
 		System.out.println(Example25.a); 
 	}
 }	
+ANS:
+60 
+50
 ------------------------------------------------------
 Que-8) : What is the output of below program ?
 
@@ -193,6 +209,8 @@ class Test50
 		System.out.print(x + " "); 
 	} 
 }
+ANS:
+10 20
 ------------------------------------
 Que-9) : What is the output of below program ?
 
@@ -208,6 +226,7 @@ class Test51
 	  System.out.print(x + " "); 
 	} 
 }
+ANS:Error
 -------------------------------------
 Que-10) : What is the output of below program ?
 
@@ -225,6 +244,7 @@ class Test52
 		System.out.print(x + " "); 
 	} 
 }
+ANS:20 10
 ----------------------------------------------------------------------
 Que-11) : What is the output of below program ?
 
@@ -242,6 +262,7 @@ class Test53
 	  System.out.print(t.x + " "); 
 	} 
 }
+ANS:Error
 -----------------------------------------------------------------------
 Que-12) : What is the output of below program ?
 
@@ -250,7 +271,7 @@ public class Test54
 	int x = 10; 
 	public static void main(String[] args) 
 	{ 	 
-		Test54 obj = passObject(null);
+		Test54 obj = passObject(new test54);
 		System.out.println(obj.x);
 	}
 	
@@ -267,6 +288,8 @@ public class Test54
 		
 	}	
 }
+ANS:java.lang.NullPointerException
+
 ------------------------------------------------------------------------
 Que-13) : What is the output of below program ?
 
@@ -285,6 +308,8 @@ public class Example2
         return new Example2();
     }
 }
+ANS: 50
+
 
 ------------------------------------------------------------------------
 Que-14) : What is the output of below program ?
@@ -311,6 +336,8 @@ public class Example2
         System.out.println(x);  
     }
 }
+ANS:
+0 60 100
 
 ------------------------------------------------------------------------
 Que-15) : What is the output of below program ?
@@ -336,7 +363,10 @@ public class Example3
         System.out.println("Final value of a: " + a);
     }
 }
-
+ANS:
+m1 called
+Static block executed
+Final value of a: 50
 ------------------------------------------------------------------------
 Que-16) : What is the output of below program ?
 
@@ -367,7 +397,11 @@ public class Example4
         System.out.println("Main: x = " + x);
     }
 }
-
+ANS:
+Static Block 1: 10
+m1 executed
+Static Block 2: 20
+Main: x = 25
 ------------------------------------------------------------------------
 Que-17) : What is the output of below program ?
 
@@ -397,7 +431,11 @@ public class Example5
         System.out.println("Class A a :" + ClassA.a);
     }
 }
-
+ANS:
+Example5 Static Block
+Main Method
+Static Block :5
+Class A a :10
 ------------------------------------------------------------------------
 Que-18) : What is the output of below program ?
 
@@ -424,7 +462,13 @@ public class Test
         Test obj2 = new Test();
     }
 }
-
+ANS:
+Static Block
+Main Method
+Instance Block
+Constructor
+Instance Block
+Constructor
 
 ------------------------------------------------------------------------
 Que-19) : What is the output of below program ?
@@ -457,6 +501,8 @@ public class Example
     }
 }
 
+ANS:Error
+
 ------------------------------------------------------------------------
 Que-20) : What is the output of below program ?
 
@@ -483,4 +529,7 @@ public class Test
     }
 }
 
+ANS:
+Before Object Creation: 30
+After Object Creation: 50
 Displaying Batch_59_Assignment.txt.
