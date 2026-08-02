@@ -1,0 +1,40 @@
+Interview Questions on Constructor :
+---------------------------------------------------------
+1) What is Constructor?
+2) What is the advantage of writing constructor in a class?
+3) What happens if we don't write any constructor in java class?
+4) How many types of constructors are available in Java?
+5) What is the difference between a default constructor and a no-argument        
+   constructor?
+6) What is the use of parameterized constructor in Java?
+7) What is data hiding in Java?
+8) What is setter & getter in Java?
+9) What is Encapsulation in java ?
+10) How we can achieve Encapsulation in Java classes?
+11) Can we decare a constructor private?
+12) Can we declare a constructor static, final, synchronized and abstract?
+13) What is static factory method?
+14) Why does java supports "Pass by value" only?
+15) What happens internally when we create an object?
+16) Where is an object stored in memory?
+17) Can one object have multiple references?
+18) Can one reference point to multiple objects?
+19) What is Garbage Collector in Java?  
+20) How does Garbage Collection work?
+21) What is the purpose of the System.gc() method?
+22) What makes an object eligible for Garbage Collection?
+23) What are different ways to make an object eligible for Garbage Collection?
+24) What is constructor overloading?
+25) Why do we overload constructors?
+26) What are the rules for constructor overloading?
+27) What is the use of this() Can we write this() inside a method.
+28) What is non static block, What is the purpose of non static block?
+29) Which executes first, a non-static block or a constructor?
+30) What is the complete object initialization sequence in Java?
+31) What is a blank final field
+32) Why is it called a blank final field?
+33) When can a blank final field be initialized?
+34) Is it mandatory to initialize a blank final field?
+35) Can we initialize a blank final field more than once?
+36) What happens if one constructor does not initialize the blank final field?
+37) Why do developers use blank final fields?
