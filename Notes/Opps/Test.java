@@ -1,23 +1,23 @@
 void main()
 {
-Maneger m1=new Maneger(100,"Scott");
-Maneger m2=new Maneger(101,"Raju");
-m1.equals(m2);
+
+
+
 }
 
-class Maneger
+sealed class A
 {
-    private int id;
-    private String name;
-    public Maneger(int id,String name)
-    {
-        this.name=name;
-        this.id=id;
-    }
 
-    @Override
-    public boolean equals(Object obj)
-    {
+}
+non-sealed class B extends A
+{
 
-    }
+}
+ final class C extends A
+{
+
+}
+class D
+{
+
 }
