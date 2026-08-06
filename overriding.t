@@ -54,6 +54,11 @@ class Car extends Vehicle
 	{
 		return 18;
 	}	
+public void printTankCapacity()
+	{
+		System.out.println(this.fuelCapacity());
+	}
+
 }
 
 public class Test
@@ -61,6 +66,7 @@ public class Test
 
 	public static void main(String[] args)
 	{
+		# Vehicle v1 = new Car();
 		Vehicle v1 = new Car();
 		v1.printTankCapacity();
 
@@ -187,7 +193,7 @@ public class Test11
 		Animal b = new Horse();
 		a.eat();
 		b.eat();
-		b.buck();
+		b.buck();//error because b is refernce baribble call animal class animal class not contain any buck method
 	}
 }
 class Animal
@@ -210,7 +216,7 @@ class Horse extends Animal
 			System.out.println("Printing");
 	}
 }
-ANS:errors becuse dont call specific method 
+ANS:errors 
 -----------------------------------------------------------------------
 Q7)
 
@@ -262,6 +268,7 @@ obja = objb;
 obja.foo();
 }
 }
+ANS:B B
 ----------------------------------------------------------------------
 Q9) Find the compilation errors
 
@@ -287,7 +294,7 @@ class Singer
     return "la";
   }
 }
-
+ANS:fa la
 -----------------------------------------------------------------------
 Q10)
 class A 
@@ -310,6 +317,7 @@ A b = new B();
 b.printName();
 }
 }
+ANS:Error
 ----------------------------------------------------------------------
 Q11)
 class A 
@@ -347,6 +355,9 @@ System.out.println("Name-C");
  a.printValue();
  }
  }
+ Ans:
+ Value-A
+Value-A
 --------------------------------------------------------------------
 Q12)
 
@@ -376,6 +387,8 @@ public static void newPrint(A1 a)
 a.printName();
 }
 }
+ans:
+Name-B
 -----------------------------------------------------------------------
 Q13)
 class A 
@@ -411,6 +424,7 @@ public static void newPrint(A a){
 a.printName();
 }
 }
+ans:Name-c
 -----------------------------------------------------------------------
 Q14)
 
@@ -449,6 +463,7 @@ public static void newPrint(A a)
 a.printName();
  }
  }
+ ana:name-c
 ----------------------------------------------------------------------
 Q15)
 
@@ -475,7 +490,7 @@ B b = new B();
 System.out.println(b.getCountryName().toString());
 }
 }
-
+ans:Eroor dupilicate 
 ----------------------------------------------------------------------
 Q16)
 
@@ -501,6 +516,7 @@ A a = new B();
 a.printName();
 }
 }
+Ans:Name-A
 ----------------------------------------------------------------------
 Q17)
 
@@ -530,6 +546,8 @@ A b = new B();
 b.printValue();
 }
 }
+ANS:Error 
+The error occurs because of reference type vs object type in Java.
 ----------------------------------------------------------------------
 Q18)
 
@@ -561,6 +579,7 @@ b.printName();
 }
 }
 
+ANS:The error is because the object is of type A, not B.
 ----------------------------------------------------------------------
 Q19)
 
@@ -590,6 +609,7 @@ A a = (A)b;
 a.printName();
 }
 }
+ans:Name-B
 ---------------------------------------------------------------------
 Q20)
 
@@ -616,6 +636,8 @@ A a = new B();
 a.printName();
 }
 }
+Ans:printName() in B cannot override printName() in A
+return type String is not compatible with void
 -----------------------------------------------------------------------
 Q21)
 
@@ -641,8 +663,9 @@ class q31
      }
 }
 
-
-
+ans:
+In the Animal version
+In the Animal version
 
 
 
