@@ -1,7 +1,4 @@
 
-Batch_59_Assignment.txt
-Page
-124
 /
 1
 100%
@@ -43,6 +40,9 @@ public class Test
     }
 }
 
+ANS:
+Display in B
+Show in C
 -------------------------------------------------------------------
 Q2)
 
@@ -68,6 +68,8 @@ public class Test
         d.sound();
     }
 }
+ANS:
+Error 
 -----------------------------------------------------------------------
 Q3)
 
@@ -96,7 +98,7 @@ public class Test
         obj.m1();
     }
 }
-
+ANS:B m1
 -----------------------------------------------------------------------
 Q4)
 
@@ -117,9 +119,13 @@ class A {}
 class B extends A {}
 class C extends B {}
 class D extends C {}
+
+ANS:
+A
+B
+C
 ----------------------------------------------------------------------
 Q5)
-
 class C 
 {
 }
@@ -150,6 +156,7 @@ public static void main(String... args)
      a.getOBJ();
 }
 }
+ANS:class B - return D
 ----------------------------------------------------------------------
 Q6)
 
@@ -180,6 +187,8 @@ f.method1();
 }
 
 }
+ANS:
+Subclass method1
 ---------------------------------------------------------------------
 Q7)
 
@@ -218,6 +227,9 @@ public class Test
         c.printSound();
     }   
 }
+ANS:
+car
+car
 --------------------------------------------------------------------
 Q8)
 
@@ -250,6 +262,7 @@ public class Test8
               t.print(b);
   }
 }
+ANS:Base
 ----------------------------------------------------------------------
 Q9)
 
@@ -284,6 +297,9 @@ public class Test
         p.m2();
     }
 }
+ANS: 
+Child m1
+SubChild m2
 ----------------------------------------------------------------------
 Q10)
 
@@ -329,6 +345,15 @@ class Alpha extends Beta
 		val=1000;
 	}
 }
+ANS:
+M
+Q
+W
+R
+F
+D
+C
+
 ----------------------------------------------------------------------
 Q11)
 
@@ -353,6 +378,9 @@ class Test5
 		 System.out.println(f.a);
 	}
 }
+ANS:b 3
+
+
 -----------------------------------------------------------------------
 Q12)
 What happens if a subclass does not implement all inherited abstract methods?
@@ -364,6 +392,8 @@ B) It becomes an abstract class.
 C) The compiler automatically provides implementations.
 
 D) A runtime exception occurs.
+
+ANS:B
 --------------------------------------------------------------------
 Q13)
 
@@ -385,6 +415,7 @@ public class b209
  a1.printValue(); 
  }
  }
+ ANS:A
 -----------------------------------------------------------------------
 Q14)
 
@@ -392,33 +423,37 @@ Q14)
 
 a) abstract class A {	
      void m1();
-   }
+   }//A method without a body must be declared abstract.
 
 b) public class A {	
      abstract void m1();
    }
 
+//the class A is not declared abstract.
 c) abstract public class A {	
     abstract void m1();
    }
+   //Valid
 
 d) abstract public class A 
    {	
      void m1() { }
    }
 
+   //Valid
+
 e) public abstract class A {
     abstract void m1();	
     A(){ }	
     void m2() { }
     }
-
+//valid 
 f) public abstract class A {
      abstract int x = 100;	
      abstract void m1();
      abstract void m2();
     }
-
+//Valid
 g) public abstract class A {	
     abstract void m1();
    }
@@ -427,6 +462,8 @@ g) public abstract class A {
     A a = new A();
     }
    }
+
+   //
 
 h) public abstract class A 
    {	
