@@ -1,1 +1,0 @@
-*If the super class non static method name and sub class non static method name both are same then it is called Method Overriding.
