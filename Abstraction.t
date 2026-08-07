@@ -428,7 +428,7 @@ a) abstract class A {
 b) public class A {	
      abstract void m1();
    }
-
+//Invaid 
 //the class A is not declared abstract.
 c) abstract public class A {	
     abstract void m1();
@@ -453,7 +453,7 @@ f) public abstract class A {
      abstract void m1();
      abstract void m2();
     }
-//Valid
+//Invalid
 g) public abstract class A {	
     abstract void m1();
    }
@@ -463,7 +463,7 @@ g) public abstract class A {
     }
    }
 
-   //
+   //Invalid
 
 h) public abstract class A 
    {	
@@ -479,12 +479,13 @@ h) public abstract class A
         A.m2(); 
      }
     }
-
+//Valid
 i) public abstract class A {	
     abstract void m1();
    private A(){ }
    }
    public class B extends A { }
+   //Invalid
 ---------------------------------------------------------------------
 Q15)
 
@@ -515,7 +516,8 @@ Gamma c = new Gamma();
  c.m1(new Beta());
   }
 }
-----------------------------------------------------------------------
+ANS:Error 
+-----------------------------------------------------------------
 Q16)
 
 class Grandparent 
@@ -549,6 +551,8 @@ public class Exam
         yo.act();
     }
 }
+
+ANS:child
 ----------------------------------------------------------------------
 Q17)
 
@@ -568,6 +572,7 @@ String name = "stripes ";
  System.out.println(m.name + m.makeNoise());
  }
 }
+ANS:Rocky roarrrrrrrrrrr
 ---------------------------------------------------------------------
 Q18) 
 class Animal { }
@@ -591,6 +596,8 @@ class q31
             q.doStuff(ob2);
      }
 }
+ANS:In the Animal version
+In the Animal version
 ----------------------------------------------------------------------
 Q19)
 
@@ -603,6 +610,7 @@ B) Must not have a method body
 C) Can have or not have a method body
 
 D) Must be private
+Ans:
 ----------------------------------------------------------------------
 Q20)
 
@@ -628,6 +636,7 @@ class Exam
 		}
 	}
 }
+Ans:false
 ======================================================================
 
 
